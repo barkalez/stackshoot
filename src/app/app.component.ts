@@ -13,8 +13,9 @@ export class AppComponent {
   public appPages = [
     
     { title: 'Conectar', url: '/conectar', icon: 'bluetooth' },
+    { title: 'Apilar', url: '/apilar', icon: 'barcode' },
+
 
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }

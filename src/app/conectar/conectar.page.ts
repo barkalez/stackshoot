@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { BleClient } from '@capacitor-community/bluetooth-le';
 
 @Component({
   selector: 'app-conectar',
@@ -10,11 +11,20 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
-export class ConectarPage implements OnInit {
+export class ConectarPage {
+  conectar: string = 'Conectar'; // Define the 'conectar' property with a default value
 
-  constructor() { }
-
-  ngOnInit() {
+  onButtonClick() {
+    // Lógica a ejecutar cuando se hace clic en el botón
+    console.log('Botón clickeado');
+    // ... otro código ...
   }
 
+constructor() { }
+
+ngOnInit() {
 }
+
+}
+
+

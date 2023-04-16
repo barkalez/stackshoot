@@ -15,4 +15,8 @@ export const routes: Routes = [
     path: 'conectar',
     loadComponent: () => import('./conectar/conectar.page').then( m => m.ConectarPage)
   },
+  {
+    path: 'apilar',
+    loadComponent: () => import('./apilar/apilar.page').then( m => m.ApilarPage)
+  },
 ];
